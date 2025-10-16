@@ -9,6 +9,6 @@ class BarangController extends Controller
 {
     public function index(Request $request): View
     {
-        return view('data-master.Barang');
+        return view('barang.index');
     }
 }

@@ -9,6 +9,6 @@ class LaporanController extends Controller
 {
     public function index(Request $request): View
     {
-        return view('Laporan.laporan');
+        return view('Laporan.index');
     }
 }

@@ -9,6 +9,6 @@ class SupplierController extends Controller
 {
     public function index(Request $request): View
     {
-        return view('data-master.supplier');
+        return view('supplier.index');
     }
 }

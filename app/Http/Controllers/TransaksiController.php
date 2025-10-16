@@ -9,6 +9,6 @@ class TransaksiController extends Controller
 {
     public function index(Request $request): View
     {
-        return view('Transaksi.transaksi');
+        return view('Transaksi.index');
     }
 }

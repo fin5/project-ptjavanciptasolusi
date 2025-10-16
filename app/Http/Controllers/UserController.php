@@ -36,7 +36,7 @@ class UserController extends Controller
             ['path' => url()->current(), 'query' => $request->query()]
         );
 
-        return view('data-master.user', [
+        return view('user.index', [
             'users' => $paginator,
             'search' => $search,
         ]);
