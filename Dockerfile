@@ -11,6 +11,7 @@ ENV APP_DEBUG false
 ENV LOG_CHANNEL stderr
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
+COPY config/nginx.conf /etc/nginx/sites-available/default.conf
 COPY scripts/00-laravel-deploy.sh /usr/local/bin/00-laravel-deploy.sh
 RUN chmod +x /usr/local/bin/00-laravel-deploy.sh
 
