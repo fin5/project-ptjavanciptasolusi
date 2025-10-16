@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\barangController;
-use App\Http\Controllers\dashboardController;
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\TransaksiController;
@@ -19,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [dashboardController::class, 'index'])->name('dashboard');
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/data-master/user', [UserController::class, 'index'])->name('data.user');
-Route::get('/data-master/barang', [barangController::class, 'index'])->name('data.barang');
+Route::get('/data-master/barang', [BarangController::class, 'index'])->name('data.barang');
 Route::get('/data-master/supplier', [SupplierController::class, 'index'])->name('data.supplier');
 Route::get('/transaksi', [TransaksiController::class, 'index'])->name('transaksi');
 Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan');
